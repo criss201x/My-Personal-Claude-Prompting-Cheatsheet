@@ -1,0 +1,16 @@
+{
+  "name": "claude-cheatsheet-api",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "bun --watch index.js",
+    "start": "bun run index.js",
+    "test": "bun test"
+  },
+  "dependencies": {
+    "hono": "^4.0.0",
+    "jose": "^5.0.0",
+    "postgres": "^3.4.4"
+  }
+}

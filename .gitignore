@@ -1,0 +1,63 @@
+# -----------------------------
+# Global .gitignore (root)
+# -----------------------------
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.claude/ 
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs and debug files
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment and local config (security)
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Secrets and private keys (security)
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+*.jks
+*.keystore
+id_rsa
+id_rsa.pub
+
+# Node / JS dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build outputs and coverage
+build/
+dist/
+coverage/
+.nyc_output/
+
+# Cache and temp files
+.cache/
+.tmp/
+tmp/
+
+# Runtime data
+*.pid
+
+# Project-specific data
+api/data/
+
+# Docker local overrides and generated files
+docker-compose.override.yml
+*.tar
