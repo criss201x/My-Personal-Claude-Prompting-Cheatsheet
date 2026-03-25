@@ -20,21 +20,8 @@ yarn-error.log*
 pnpm-debug.log*
 
 # Environment and local config (security)
-.env
-.env.*
-!.env.example
-!.env.*.example
-
-# Secrets and private keys (security)
-*.pem
-*.key
-*.crt
-*.p12
-*.pfx
-*.jks
-*.keystore
-id_rsa
-id_rsa.pub
+# Nota: no se ignoran .env para facilitar ejecución al clonar.
+# Seguridad de producción se ajustará después.
 
 # Node / JS dependencies
 node_modules/
@@ -42,8 +29,6 @@ node_modules/
 .pnp.js
 
 # Build outputs and coverage
-build/
-dist/
 coverage/
 .nyc_output/
 
@@ -54,9 +39,6 @@ tmp/
 
 # Runtime data
 *.pid
-
-# Project-specific data
-api/data/
 
 # Docker local overrides and generated files
 docker-compose.override.yml
