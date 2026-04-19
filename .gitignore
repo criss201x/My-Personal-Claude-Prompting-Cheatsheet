@@ -22,6 +22,12 @@ pnpm-debug.log*
 # Environment and local config (security)
 # Nota: no se ignoran .env para facilitar ejecución al clonar.
 # Seguridad de producción se ajustará después.
+.env.prod
+.env.production
+.env.*.local
+
+# Backups generados en producción (Oracle Cloud VM)
+backups/
 
 # Node / JS dependencies
 node_modules/
